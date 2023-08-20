@@ -1,0 +1,13 @@
+hazilcast:
+  network:
+    join:
+      multicast:
+        enabled: true
+
+  scheduled-executor-service:
+    myScheduledExecSvc:
+      statistics-enabled: true
+      pool-size: 16
+      durability: 1
+      capacity: 100
+      split-brain-protection-ref: splitbrainprotection-name
